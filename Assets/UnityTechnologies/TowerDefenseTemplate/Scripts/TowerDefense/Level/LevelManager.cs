@@ -15,8 +15,7 @@ namespace TowerDefense.Level
 	public class LevelManager : Singleton<LevelManager>
 	{
 		/// <summary>
-		/// The configured level intro. If this is null the LevelManager will fall through to the gameplay state (i.e. SpawningEnemies)
-		/// </summary>
+		/// The configured level intro.
 		public LevelIntro intro;
 
 		/// <summary>

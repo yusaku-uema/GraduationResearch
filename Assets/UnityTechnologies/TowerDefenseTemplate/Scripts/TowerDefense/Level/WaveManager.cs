@@ -6,7 +6,7 @@ using UnityEngine;
 namespace TowerDefense.Level
 {
 	/// <summary>
-	/// WaveManager - handles wave initialisation and completion
+	/// WaveManager - ターンの初期設定
 	/// </summary>
 	public class WaveManager : MonoBehaviour
 	{

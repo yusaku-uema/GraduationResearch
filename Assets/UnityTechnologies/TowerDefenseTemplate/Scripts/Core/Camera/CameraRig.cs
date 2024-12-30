@@ -4,33 +4,32 @@ using UnityEngine;
 namespace Core.Camera
 {
 	/// <summary>
-	/// Class to control the camera's behaviour. Camera rig currently operates best on terrain that is mostly on
-	/// a single plane
+	/// カメラ制御するスクリプト
 	/// </summary>
 	public class CameraRig : MonoBehaviour
 	{
 		/// <summary>
-		/// Look dampening factor
+		/// 視点の移動速度を制御する減衰係数
 		/// </summary>
 		public float lookDampFactor;
 
 		/// <summary>
-		/// Movement dampening factor
+		/// カメラ移動速度の制御
 		/// </summary>
 		public float movementDampFactor;
 
 		/// <summary>
-		/// Nearest zoom level - can go a bit further than this on touch, for springiness
+		/// ズーム可能な最短距離
 		/// </summary>
 		public float nearestZoom = 15;
 
 		/// <summary>
-		/// Furthest zoom level - can go a bit further than this on touch, for springiness
+		///ズーム可能な最長距離
 		/// </summary>
 		public float furthestZoom = 40;
 
 		/// <summary>
-		/// True maximum zoom level
+		/// ズーム限界距離
 		/// </summary>
 		public float maxZoom = 60;
 
@@ -54,10 +53,10 @@ namespace Core.Camera
 		/// </summary>
 		public Transform zoomedCamAngle;
 
-		/// <summary>
-		/// Map size, edited through the CameraRigEditor script in edit mode
-		/// </summary>
-		[HideInInspector]
+        /// <summary>
+        /// マップサイズ（編集モードのCameraRigEditorスクリプトで編集可能)
+        /// </summary>
+        [HideInInspector]
 		public Rect mapSize = new Rect(-10, -10, 20, 20);
 
 		/// <summary>
